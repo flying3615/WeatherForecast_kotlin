@@ -3,15 +3,16 @@ package com.liuyufei.assignment1
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import com.liuyufei.assignment1.domain.RequestForecastCommand
-import org.jetbrains.anko.*
-
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.async
+import org.jetbrains.anko.toast
+import org.jetbrains.anko.uiThread
 
 class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

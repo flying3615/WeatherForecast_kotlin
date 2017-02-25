@@ -31,4 +31,6 @@ class ForecastDataMapper {
         val df = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.getDefault())
         return df.format(dt*1000)
     }
+
+
 }
